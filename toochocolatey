@@ -1,0 +1,49 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    vector<int> A(N);
+
+    for (int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+
+    // Store unique values
+    set<int> s;
+
+    for (int i = 0; i < N; i++) {
+        s.insert(A[i]);
+    }
+
+    vector<int> chocolates;
+
+    for (int x : s) {
+        chocolates.push_back(x);
+    }
+
+    // Sort in descending order
+    sort(chocolates.begin(), chocolates.end(), greater<int>());
+
+    int alex = 0, bob = 0;
+
+    for (int i = 0; i < chocolates.size(); i++) {
+        if (i % 2 == 0)
+            alex += chocolates[i];
+        else
+            bob += chocolates[i];
+    }
+
+    if (alex > bob)
+        cout << "Alex";
+    else
+        cout << "Bob";
+
+    return 0;
+}
