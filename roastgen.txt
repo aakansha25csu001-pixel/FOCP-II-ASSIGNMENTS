@@ -1,0 +1,52 @@
+I want a beginner-friendly C++ project for college students.
+
+Create a console application called “Student Excuse Generator” where students can enter their name and receive a funny excuse for missing homework.
+
+The excuses should sound natural and relatable like:
+
+* Wi-Fi stopped working
+* Laptop updated for hours
+* File got deleted accidentally
+
+Use:
+
+* vector<string>
+* rand() and srand(time(0))
+* placeholder replacement for {name}
+
+Keep the code clean, simple, and easy to explain during viva.
+
+2nd _ 
+My C++ Student Excuse Generator keeps showing the same excuse every time I run the program.
+
+I am using rand() but the output does not change.
+
+Please:
+
+* Identify the problem
+* Explain why it happens
+* Fix the code
+* Explain the solution in simple beginner-friendly language
+
+3rd_
+In my C++ program, the output is showing {name} instead of the actual student name.
+
+Example:
+{name} forgot the homework because the laptop crashed.
+
+Please help me:
+
+* Replace {name} properly using string functions
+* Explain the logic step-by-step
+* Keep the solution simple for beginners
+
+4th_
+My C++ program is not reading the full student name correctly.
+
+If I enter:
+Aakansha Singh
+
+It only reads Aakansha
+
+How can I fix this issue?
+Please explain the difference between cin and getline().
